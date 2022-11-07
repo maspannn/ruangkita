@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BKBDVC5SS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-1BKBDVC5SS');
+    </script>
+    <meta name="google-site-verification" content="oNRjU30FTz1XeTRc8H-7DkXprtpY-S3OTt3oVXpW_3o" />
+    <meta name="theme-color" content="#2d2c4d">
+    <meta name="description" content="Ruang Kita adalah aplikasi pemetaan web sederhana untuk menyajikan peta digital dan dapat melakukan pencarian data secara detail & terstruktur.">
+    <meta name="author" content="Mas Pannn">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="425">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="assets/img/banner.jpg">
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="article" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="publisher" content="Mas Pannn">
+    <meta name="distribution" content="global">
+    <meta http-equiv="copyright@ 2022 Mas Pannn" content="Mas Pannn">
+    <meta name="webcrawlers" content="all">
+    <meta name="rating" content="ecommerce">
+    <meta name="spiders" content="all">
+    <meta name="copyright" content="Mas Pannn">
+    <meta name="revisit-after" content="2">
+    <meta name="Slurp" content='all'>
+    <meta name="DC.Publisher" content="Mas Pannn">
+    <meta name="msapplication-TileColor" content="#2d2c4d">
+    <meta name="msapplication-TileImage" content="assets/img/favicon.png">
+    <meta name="twitter:title" content="Ruang Kita | Mengenal Indonesia Dalam Satu Genggaman">
+    <meta name="twitter:description" content="Ruang Kita adalah aplikasi pemetaan web sederhana untuk menyajikan peta digital dan dapat melakukan pencarian data secara detail & terstruktur.">
+    <meta name="twitter:image" content="assets/img/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Diupload oleh" />
+    <meta name="twitter:data1" content="Mas Pannn" />
+    <meta name="geo.placename" content="Indonesia"/>
+    <meta name="googlebot" content="index,follow">
+    <meta name="Googlebot-Image" content="index,follow">
+    <meta name="Scooter" content="index,follow">
+    <meta name="msnbot" content="index,follow">
+    <meta name="alexabot" content="index,follow">
+    <meta name="Slurp" content="index,follow">
+    <meta name="ZyBorg" content="index,follow">
+    <meta name="yahoobot" content="index,follow">
+    <meta name="bingbot" content="index,follow">
+    <meta name="expires" content="never">
+    <meta name="geo.placename" content="Indonesia">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
+    <link rel="stylesheet" href="assets/plugins/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css">
+    <link rel="stylesheet" href="https://torfsen.github.io/leaflet.zoomhome/dist/leaflet.zoomhome.css"/>
+    <link rel="stylesheet" href="assets/plugins/scale/L.Control.BetterScale.css">
+    <script src="assets/zoomhome/leaflet.zoomhome.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="assets/css/app.css">
+  
+    <title>Ruang Kita | Mengenal Indonesia Dalam Satu Genggaman</title>
+  
+  </head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid" style="color:white">
+    <a class="navbar-brand" href="index.html" >
+      <img src="assets/img/icon.png" alt="Logo Ruang Kita" width="100%" height="35">
+    </a>
+    <div class="mt-1">
+      <span class="material-symbols-outlined" id="sidebar-toggle-btn">map</span>
+      <span class="material-symbols-outlined" id="blog-click">search</span>
+    </div>
+  </div>
+</nav>
+
+<div id="search-wrap" style="background-color:#2d2c4d">
+  <div id="hidden-div">
+    <div style="padding:10px;height:50px;">
+      <div class="box position-absolute top-20 start-50 translate-middle-x">
+        <form role="search">
+          <div class="form-group has-feedback">
+            <input id="searchbox" type="text" placeholder="Cari di sini" class="form-control">
+            <span id="searchicon" class="fa fa-search form-control-feedback"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  <div id="sidebar">
+    <div class="sidebar-wrapper">
+      <div class="panel panel-default" id="features">
+        <div class="panel-heading">
+          <h1 class="panel-title" style="font-size:15pt">Points of Interest
+          <button type="button" class="btn pull-right" id="sidebar-hide-btn" ><i class="fa fa-chevron-left"></i></button></h1>
+        </div>
+        <div class="panel-body">
+          <div class="row" style="margin:3px">
+            <div style="display:grid;grid-template-rows:38px;grid-template-columns: 60% auto;grid-row-gap:20px;grid-column-gap:10px">
+              <input type="text" class="form-control search" placeholder="Filter" />
+              <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-table">
+          <table class="table table-hover" id="feature-list">
+            <tbody class="list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+</div>
+<div id="loading">
+  <div class="loading-indicator">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvasAds" aria-labelledby="offcanvasBottomLabel" style="height:115px;background-color:#f7f7f7">
+  <div class="position-absolute top-0 end-0 translate-middle"  style="background-color:#f7f7f7;margin-top:-10px;margin-right:-17px;border-top-left-radius:12px;padding:5px">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-header" align="center">
+    <div class="position-absolute top-0 start-50 translate-middle-x">
+      ##
+    </div>
+  </div>
+</div>-->
+
+<div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="myAds" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color:transparent;border-style:none;margin:0;padding:0">
+      <div class="modal-header" style="border-style:none;margin-bottom:-35px;z-index:999999">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color:white;border-radius:50%"></button>
+      </div>
+      <div class="modal-body">
+        <div id="iklan"></div>
+        <div id="ads"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="featureModalWisata">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title text-primary" id="feature-title-wisata" style="font-size:16pt"></div>
+          <i class="fa fa-map-marker-alt" aria-hidden="true"></i>&nbsp;
+          <span id="feature-lat"></span>,
+          <span id="feature-long"></span>
+        </div>
+      </div>
+      <div class="modal-body" id="feature-info-wisata">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="featureModal">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title text-primary" id="feature-title" style="font-size:16pt"></div>
+      </div>
+      <div class="modal-body" id="feature-info">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.5/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
+    <script src="https://torfsen.github.io/leaflet.zoomhome/dist/leaflet.zoomhome.min.js"></script>
+    <script src="assets/plugins/scale/L.Control.BetterScale.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <script src="assets/plugins/groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/ads.js"></script>
+    
+    <script>
+    $(document).ready(function () {
+      $("#myAds").modal("show");
+    });
+    </script>
+    
+    <script>
+    function myDirectAds() {
+      window.open("https://shope.ee/5UswNT9zST");
+    }
+    </script>
+  
+</body>
+</html>
